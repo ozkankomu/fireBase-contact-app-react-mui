@@ -94,7 +94,7 @@ const FormComponent = ({ info, setInfo, handleSubmit }) => {
               </Select>
             </FormControl>
             <Button variant="contained" type="submit" value="Submit">
-              ADD
+              {isAdd}
             </Button>
           </Stack>
         </form>

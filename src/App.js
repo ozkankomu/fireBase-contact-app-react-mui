@@ -15,6 +15,7 @@ const initialValues = {
 
 function App() {
   const [info, setInfo] = useState(initialValues);
+  const [isAdd, setIsAdd] = useState("ADD");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -24,9 +25,11 @@ function App() {
       AddUser(info);
     }
     setInfo(initialValues);
+    setIsAdd("ADD");
   };
 
   const editUser = (id, username, phoneNumber, gender) => {
+    setIsAdd("UPDATE");
     setInfo({ id, username, phoneNumber, gender });
   };
 
@@ -38,6 +41,7 @@ function App() {
           info={info}
           setInfo={setInfo}
           handleSubmit={handleSubmit}
+          isAdd={isAdd}
         />
         <Contacts editUser={editUser} />
         <ToastContainer />
