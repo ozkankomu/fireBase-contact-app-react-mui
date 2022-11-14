@@ -1,0 +1,65 @@
+.dark {
+  padding: 15px;
+  background: #35424a;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Header **/
+
+header {
+  background: #35424a;
+  color: #ffffff;
+  padding-top: 20px;
+  min-height: 70px;
+  border-bottom: #a9508b 3px solid;
+}
+
+header a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+header li {
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding {
+  float: left;
+}
+
+header #branding h1 {
+  margin: 0;
+}
+
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+
+header .highlight,
+header .active {
+  color: #a9508b;
+  font-weight: bold;
+}
+
+footer {
+  padding: 20px;
+
+  color: whitesmoke;
+  background-color: #35424a;
+  text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
