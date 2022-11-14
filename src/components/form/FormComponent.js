@@ -39,6 +39,7 @@ const FormComponent = ({ info, setInfo, handleSubmit }) => {
             className="design"
             target="_blank"
             rel="noopener noreferrer"
+            style={{ color: "black" }}
           >
             <code>{"<Clarusway/> "}</code>
           </a>
