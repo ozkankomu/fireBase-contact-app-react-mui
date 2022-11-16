@@ -4,7 +4,7 @@
   text-align: center;
   display: flex;
   justify-content: space-evenly;
-  min-height: 100vh;
+  min-height: 76vh;
   background-image: url("https://picsum.photos/1600/900");
   background-repeat: no-repeat;
   background-size: cover;
